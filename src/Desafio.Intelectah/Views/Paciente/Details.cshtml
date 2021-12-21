@@ -1,0 +1,64 @@
+﻿@model Desafio.Intelectah.ViewModels.PacienteViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PacienteViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CpfPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CpfPaciente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NmPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NmPaciente)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DtNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DtNascimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SexoPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SexoPaciente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonePaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonePaciente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailPaciente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
