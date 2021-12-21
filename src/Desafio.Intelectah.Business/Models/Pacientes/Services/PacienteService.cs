@@ -30,9 +30,9 @@ namespace Desafio.Intelectah.Business.Models.Pacientes.Services
         public async Task Atualizar(Paciente paciente)
         {
             if (!ExecutarValidacao(new PacienteValidation(), paciente)) return;
-            if (await PacienteExistente(paciente)) return;
+            if (await PacienteCadastrado(paciente)) return;
             await _pacienteRepository.Atualizar(paciente);
-        }
+        } 
 
 
 
@@ -52,15 +52,15 @@ namespace Desafio.Intelectah.Business.Models.Pacientes.Services
             return true;
         }
 
-        //private async Task<bool> PacienteCadastrado(Paciente paciente)
-        //{
-        //    var pacienteAtual = await _pacienteRepository.Buscar(f => f.CpfPaciente == paciente.CpfPaciente);
-        //    if (!pacienteAtual.Any()) return true;
+        private async Task<bool> PacienteCadastrado(Paciente paciente)
+        {
+            var pacienteAtual = await _pacienteRepository.Buscar(f => f.CpfPaciente == paciente.CpfPaciente);
+            if (!pacienteAtual.Any()) return true;
 
-        //    Notificar("Já existe um paciente com esse CPF informado");
+            Notificar("Já existe um paciente com esse CPF informado");
 
-        //    return false;
-        //}
+            return false;
+        }
 
         public void Dispose()
         {
