@@ -55,20 +55,7 @@ namespace Desafio.Intelectah.ViewModels
         public HttpPostedFileBase ImagemUpload { get; set; }
         public string ImagemPaciente { get; set; }
 
-        //public bool CompararCpf(string cpf, Paciente cpfExistente)
-        //{
-
-
-        //    int cpf2 = Int32.Parse(cpf);
-        //    int cpf3 = Int32.Parse(cpfExistente.CpfPaciente);
-
-        //    if (cpf2 == cpf3)
-        //    {
-        //        System.Console.WriteLine("Cpf cadastrado no sistema");
-        //        return true;
-        //    }
-        //    return false;
-        //}
+       
         public MarcacaoConsultaViewModel MarcacaoConsulta { get; set; }
         public IEnumerable<MarcacaoConsultaViewModel> MarcacaoConsultas { get; set; }
 
