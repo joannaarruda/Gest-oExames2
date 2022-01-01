@@ -150,7 +150,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ExameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MarcacaoConsultaController.cs" />
     <Compile Include="Controllers\PacienteController.cs" />
     <Compile Include="Controllers\TipoExameController.cs" />
     <Compile Include="Global.asax.cs">
@@ -208,6 +210,16 @@
     <Content Include="Views\TipoExame\Details.cshtml" />
     <Content Include="Views\TipoExame\Edit.cshtml" />
     <Content Include="Views\TipoExame\Index.cshtml" />
+    <Content Include="Views\Exame\Create.cshtml" />
+    <Content Include="Views\Exame\Delete.cshtml" />
+    <Content Include="Views\Exame\Details.cshtml" />
+    <Content Include="Views\Exame\Edit.cshtml" />
+    <Content Include="Views\Exame\Index.cshtml" />
+    <Content Include="Views\MarcacaoConsulta\Create.cshtml" />
+    <Content Include="Views\MarcacaoConsulta\Delete.cshtml" />
+    <Content Include="Views\MarcacaoConsulta\Details.cshtml" />
+    <Content Include="Views\MarcacaoConsulta\Edit.cshtml" />
+    <Content Include="Views\MarcacaoConsulta\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -36,7 +36,7 @@ namespace Desafio.Intelectah.ViewModels
         public Guid PacienteId { get; set; }
 
 
-        public PacienteViewModel Paciente { get; set; }
-        public IEnumerable<PacienteViewModel> Pacientes { get; set; }
+        //public PacienteViewModel Paciente { get; set; }
+        //public IEnumerable<PacienteViewModel> Pacientes { get; set; }
     }
 }

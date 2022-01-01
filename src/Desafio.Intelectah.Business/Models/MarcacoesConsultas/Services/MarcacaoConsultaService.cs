@@ -48,7 +48,7 @@ namespace Desafio.Intelectah.Business.Models.MarcacoesConsultas.Services
             return true;
         }
 
-        public async Task Remover(Guid id)
+              public async Task Remover(Guid id)
         {
             await _marcacaoConsultaRepository.Remover(id);
         }
